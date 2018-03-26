@@ -58,6 +58,7 @@ public class TestSwing extends JFrame {
 		gbc_lblTemperatureConversionCalculator.gridy = 0;
 		contentPane.add(lblTemperatureConversionCalculator, gbc_lblTemperatureConversionCalculator);
 		
+		//Label prompting user to enter data
 		JLabel lblEnterYourTemperature = new JLabel("Enter your temperature in Farenheit: ");
 		GridBagConstraints gbc_lblEnterYourTemperature = new GridBagConstraints();
 		gbc_lblEnterYourTemperature.insets = new Insets(0, 0, 5, 0);
@@ -67,6 +68,7 @@ public class TestSwing extends JFrame {
 		gbc_lblEnterYourTemperature.gridy = 2;
 		contentPane.add(lblEnterYourTemperature, gbc_lblEnterYourTemperature);
 		
+		//Text field for user to enter the data
 		textField = new JTextField();
 		GridBagConstraints gbc_textField = new GridBagConstraints();
 		gbc_textField.insets = new Insets(0, 0, 5, 0);
@@ -76,6 +78,7 @@ public class TestSwing extends JFrame {
 		contentPane.add(textField, gbc_textField);
 		textField.setColumns(10);
 		
+		//Celsius label
 		JLabel lblCelsius = new JLabel("Celsius:");
 		GridBagConstraints gbc_lblCelsius = new GridBagConstraints();
 		gbc_lblCelsius.insets = new Insets(0, 0, 5, 0);
@@ -84,6 +87,7 @@ public class TestSwing extends JFrame {
 		gbc_lblCelsius.gridy = 5;
 		contentPane.add(lblCelsius, gbc_lblCelsius);
 		
+		//Calculated temperature in celcius label
 		JLabel lbltemperatureInCelcius = new JLabel("[Temperature in Celcius]");
 		GridBagConstraints gbc_lbltemperatureInCelcius = new GridBagConstraints();
 		gbc_lbltemperatureInCelcius.insets = new Insets(0, 0, 5, 0);
@@ -92,6 +96,7 @@ public class TestSwing extends JFrame {
 		gbc_lbltemperatureInCelcius.gridy = 6;
 		contentPane.add(lbltemperatureInCelcius, gbc_lbltemperatureInCelcius);
 		
+		//Kelvin label
 		JLabel lblKelvin = new JLabel("Kelvin:");
 		GridBagConstraints gbc_lblKelvin = new GridBagConstraints();
 		gbc_lblKelvin.anchor = GridBagConstraints.WEST;
@@ -100,6 +105,7 @@ public class TestSwing extends JFrame {
 		gbc_lblKelvin.gridy = 7;
 		contentPane.add(lblKelvin, gbc_lblKelvin);
 		
+		//Calculated temperature in kelvin label
 		JLabel lbltemperatureInKelvin = new JLabel("[Temperature in Kelvin]");
 		GridBagConstraints gbc_lbltemperatureInKelvin = new GridBagConstraints();
 		gbc_lbltemperatureInKelvin.anchor = GridBagConstraints.WEST;
@@ -107,7 +113,9 @@ public class TestSwing extends JFrame {
 		gbc_lbltemperatureInKelvin.gridy = 8;
 		contentPane.add(lbltemperatureInKelvin, gbc_lbltemperatureInKelvin);
 	
+		//Button to convert and display temperatures
 		JButton btnConvert = new JButton("Convert!");
+		//Event handling for the button click
 		btnConvert.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
