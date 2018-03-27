@@ -1,5 +1,3 @@
-package UCLA_Learning_Swing;
-
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
